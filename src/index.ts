@@ -31,13 +31,13 @@ const observer = doc.onSnapshot(
     console.log(cmdline);
     exec(cmdline, (err: any, stdout: any, stderr: any) => {
       if (err) {
-        console.log(`stderr: ${stderr}`);
+        console.log(`${stderr}`);
         return;
       }
       console.log(`${stdout}`);
     });
   },
   (err: any) => {
-    console.log(`Encountered error: ${err}`);
+    console.log(`${err}`);
   }
 );
