@@ -30,11 +30,16 @@ const observer = doc.onSnapshot(
     const cmdline = `idevicelocation -u ${UDID} -- ${latitude} ${longitude}`;
     console.log(cmdline);
     exec(cmdline, (err: any, stdout: any, stderr: any) => {
-      if (err) {
+      if (stdout !== null) {
+        console.log(`${stdout}`);
+      }
+      if (stderr !== null) {
         console.log(`${stderr}`);
+      }
+      if (err !== null) {
+        console.log(`${err}`);
         return;
       }
-      console.log(`${stdout}`);
     });
   },
   (err: any) => {
