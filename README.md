@@ -3,27 +3,28 @@ FakeRunner uses idevicelocation to send location information written to iOS devi
 
 # System Requirement
 - idevicelocation
-- Mac
+- MacOS or Linux
 - iOS device
   
 # Getting started
-1. Edit config.json
+1. Install module
+   ```
+   npm install
+   ```
 
-```
-{
-  "userId": "user is here",
-  "udid": "device UDID here"
-}
-```
+2. Edit config.json
+    ```
+    {
+    "userId": "user is here",
+    "udid": "device UDID here"
+    }
+    ```
 
-2. sa-key.json
-   
-   Get sa-key.json from Firebase Console and store it in the root directory
+3. Get sa-key.json   
+   Get sa-key.json from Firebase Console and store it in the this root directory
 
-3. Build
-
+4. Build   
    ```npm run build```
 
-4. Run
-
+5. Run   
    ```npm start```
