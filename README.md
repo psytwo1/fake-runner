@@ -23,8 +23,12 @@ FakeRunner uses idevicelocation to send location information written to iOS devi
 3. Get sa-key.json   
    Get sa-key.json from Firebase Console and store it in the this root directory
 
-4. Build   
-   ```npm run build```
+4. Build
+   ```
+   npm run build
+   ```
 
-5. Run   
-   ```npm start```
+5. Run
+   ```
+   npm start
+   ```
