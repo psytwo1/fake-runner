@@ -7,19 +7,23 @@ FakeRunner uses idevicelocation to send location information written to iOS devi
 - iOS device
   
 # Getting started
-1. Edit config,json
+1. Edit config.json
 
-`
+```
 {
   "userId": "user is here",
   "udid": "device UDID here"
 }
-`
+```
 
-2. Build
+2. sa-key.json
+   
+   Get sa-key.json from Firebase Console and store it in the root directory
 
-`npm run build`
+3. Build
 
-3. Run
+   ```npm run build```
 
-`npm start`
+4. Run
+
+   ```npm start```
