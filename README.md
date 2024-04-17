@@ -6,3 +6,20 @@ FakeRunner uses idevicelocation to send location information written to iOS devi
 - Mac
 - iOS device
   
+# Getting started
+1. Edit config,json
+
+`
+{
+  "userId": "user is here",
+  "udid": "device UDID here"
+}
+`
+
+2. Build
+
+`npm run build`
+
+3. Run
+
+`npm start`
